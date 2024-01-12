@@ -260,6 +260,7 @@ li.gnav-item a{
 		max-width: 768px;
 		justify-content: center;
 		transition: 0.3s;
+		position: absolute;
 	}
 	.gnav-menu{
 		padding-top: 60px;
@@ -281,10 +282,11 @@ li.gnav-item a{
 	}	
 	#gnav-input:checked ~ #gnav-btn{
 		background:url("../img/ico-nav-close.svg") center center no-repeat;
+		z-index: 200;
 	}
-	/* #gnav-input:checked ~ #header-gnav-content{
+	#gnav-input:checked ~ #header-gnav-content{
 		right: 0;
-	} */
+	}
 }
 
 @media screen and (max-width: 768px){
